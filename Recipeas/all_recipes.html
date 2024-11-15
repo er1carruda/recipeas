@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas as Receitas - Recipeas</title>
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Explore todas as receitas disponíveis. Utilize os filtros para encontrar a receita que deseja preparar!">
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para a Fonte Inter via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link para o CSS do AOS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Link para o CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar Atualizada com Ícones e Novo Link para "Todas as Receitas" -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo Recipeas" class="navbar-logo" aria-label="Logo Recipeas">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <img src="assets/images/home.png" alt="Home" class="navbar-icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="all_recipes.html">
+                            <img src="assets/images/book.png" alt="Todas as Receitas" class="navbar-icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="submit_recipe.html">
+                            <img src="assets/images/add.png" alt="Enviar Receita" class="navbar-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Filtros e Exibição de Receitas -->
+    <section class="container mt-5" data-aos="fade-up">
+        <h2 class="mb-4">Todas as Receitas</h2>
+        <div class="row mb-4">
+            <!-- Filtros -->
+            <div class="col-md-3">
+                <h5>Filtros</h5>
+                <form id="filtersForm">
+                    <div class="mb-3">
+                        <label for="filterCategory" class="form-label">Categoria</label>
+                        <select class="form-select" id="filterCategory">
+                            <option value="">Todas</option>
+                            <!-- As opções serão geradas dinamicamente -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="filterAuthor" class="form-label">Autor</label>
+                        <select class="form-select" id="filterAuthor">
+                            <option value="">Todos</option>
+                            <!-- As opções serão geradas dinamicamente -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="filterDuration" class="form-label">Tempo de Duração (Minutos)</label>
+                        <select class="form-select" id="filterDuration">
+                            <option value="">Todos</option>
+                            <option value="30">Até 30 minutos</option>
+                            <option value="60">Até 1 hora</option>
+                            <option value="90">Até 1h30</option>
+                            <option value="120">Até 2 horas</option>
+                            <!-- Ajuste conforme necessário -->
+                        </select>
+                    </div>
+                    <!-- Novo Filtro de Porções -->
+                    <div class="mb-3">
+                        <label for="filterPortions" class="form-label">Porções</label>
+                        <select class="form-select" id="filterPortions">
+                            <option value="">Todas</option>
+                            <option value="1-2">1-2 porções</option>
+                            <option value="3-4">3-4 porções</option>
+                            <option value="5-6">5-6 porções</option>
+                            <option value="7-10">7-10 porções</option>
+                            <option value="11+">11 ou mais porções</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
+                    <button type="button" id="clearFilters" class="btn btn-secondary ms-2">Limpar Filtros</button>
+                </form>
+            </div>
+            <!-- Exibição das Receitas -->
+            <div class="col-md-9">
+                <div class="row" id="all-recipes-container">
+                    <!-- As receitas serão inseridas aqui dinamicamente -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script do AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Script Personalizado para Todas as Receitas -->
+    <script src="js/all_recipes.js"></script>
+    <!-- Inicialização do AOS -->
+    <script>
+        AOS.init({
+            duration: 400, // Duração da animação em milissegundos
+            easing: 'ease-in-out', // Tipo de easing
+            once: true, // Se a animação deve ocorrer apenas uma vez enquanto o usuário rola
+            mirror: false, // Se os elementos devem animar novamente enquanto rolam para fora da viewport
+        });
+    </script>
+</body>
+</html>

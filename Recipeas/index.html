@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipeas</title>
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Receitas deliciosas e fáceis de preparar. Envie suas próprias receitas e compartilhe com a comunidade!">
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para a Fonte Inter via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link para o CSS do AOS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Link para o CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar Atualizada com Ícones -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo Recipeas" class="navbar-logo" aria-label="Logo Recipeas">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <img src="assets/images/home.png" alt="Home" class="navbar-icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all_recipes.html">
+                            <img src="assets/images/book.png" alt="Todas as Receitas" class="navbar-icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="submit_recipe.html">
+                            <img src="assets/images/add.png" alt="Enviar Receita" class="navbar-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel Principal -->
+    <section class="container main-recipe mt-4" data-aos="fade-up">
+        <div id="recipeCarousel" class="carousel slide large-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner" id="carousel-inner">
+                <!-- As receitas serão inseridas dinamicamente aqui pelo JavaScript -->
+            </div>
+            <!-- Controles do Carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seção "Veja mais" -->
+    <section class="container mt-5">
+        <h2 class="mb-4">Veja mais</h2>
+        <div class="row" id="recipes-container">
+            <!-- As receitas serão inseridas aqui dinamicamente -->
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script do AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Script Personalizado -->
+    <script src="js/script.js"></script>
+    <!-- Inicialização do AOS -->
+    <script>
+        AOS.init({
+            duration: 400, // Duração da animação em milissegundos
+            easing: 'ease-in-out', // Tipo de easing
+            once: true, // Se a animação deve ocorrer apenas uma vez enquanto o usuário rola
+            mirror: false, // Se os elementos devem animar novamente enquanto rolam para fora da viewport
+        });
+    </script>
+</body>
+</html>

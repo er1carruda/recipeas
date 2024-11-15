@@ -1,0 +1,239 @@
+[
+    {
+        "nome": "Bolo de Cenoura",
+        "imagem": "https://imagem.band.com.br/novahome/055caa6d-7528-44bc-ac32-3add84bdc0b0.jpg",
+        "tempo_duracao": 45,
+        "autor": "Maria Silva",
+        "porcoes": 8,
+        "ingredientes": [
+            "3 cenouras médias",
+            "4 ovos",
+            "1 xícara de óleo",
+            "2 xícaras de açúcar",
+            "2 e 1/2 xícaras de farinha de trigo",
+            "1 colher de sopa de fermento em pó"
+        ],
+        "descricao": "Um bolo clássico de cenoura com cobertura de chocolate.",
+        "modo_preparo": [
+            "Bata no liquidificador a cenoura, os ovos e o óleo.",
+            "Misture o açúcar, a farinha e o fermento em uma tigela.",
+            "Adicione a mistura do liquidificador e mexa bem.",
+            "Asse em forno pré-aquecido a 180°C por 40 minutos."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Bolos"
+    },
+    {
+        "nome": "Panqueca de Frango",
+        "imagem": "https://i.ytimg.com/vi/3wx0tCbeTME/maxresdefault.jpg",
+        "tempo_duracao": 30,
+        "autor": "João Pereira",
+        "porcoes": 4,
+        "ingredientes": [
+            "1 xícara de leite",
+            "1 ovo",
+            "1 xícara de farinha de trigo",
+            "1 colher de sopa de óleo",
+            "1 pitada de sal",
+            "200g de frango desfiado",
+            "1/2 xícara de molho de tomate"
+        ],
+        "descricao": "Panquecas recheadas com frango ao molho de tomate.",
+        "modo_preparo": [
+            "Misture os ingredientes da massa no liquidificador.",
+            "Prepare os discos em uma frigideira antiaderente.",
+            "Recheie as panquecas com o frango misturado ao molho de tomate.",
+            "Enrole e sirva."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Pratos Principais"
+    },
+    {
+        "nome": "Macarrão à Carbonara",
+        "imagem": "https://guiadacozinha.com.br/wp-content/uploads/2018/04/Receita-de-macarrao-a-carbonara.jpg",
+        "tempo_duracao": 20,
+        "autor": "Ana Oliveira",
+        "porcoes": 2,
+        "ingredientes": [
+            "200g de espaguete",
+            "2 ovos",
+            "50g de queijo parmesão ralado",
+            "100g de bacon em cubos",
+            "Pimenta-do-reino a gosto"
+        ],
+        "descricao": "Tradicional receita italiana de macarrão com bacon e ovos.",
+        "modo_preparo": [
+            "Cozinhe o macarrão conforme as instruções da embalagem.",
+            "Frite o bacon até dourar.",
+            "Misture os ovos e o queijo em uma tigela.",
+            "Adicione o macarrão quente ao bacon e misture rapidamente com os ovos.",
+            "Finalize com pimenta-do-reino."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Massas"
+    },
+    {
+        "nome": "Feijoada",
+        "imagem": "https://alegrafoods.com.br/wp-content/uploads/2023/06/composicao-kit-feijoada-scaled.jpg",
+        "tempo_duracao": 120,
+        "autor": "Carlos Souza",
+        "porcoes": 6,
+        "ingredientes": [
+            "500g de feijão preto",
+            "300g de carne seca",
+            "200g de linguiça calabresa",
+            "200g de costelinha de porco",
+            "2 folhas de louro",
+            "1 cebola picada",
+            "3 dentes de alho picados",
+            "Sal a gosto"
+        ],
+        "descricao": "Prato típico brasileiro à base de feijão preto e carnes.",
+        "modo_preparo": [
+            "Deixe o feijão de molho por 12 horas.",
+            "Cozinhe o feijão com as carnes e o louro na panela de pressão por 40 minutos.",
+            "Em uma frigideira, refogue a cebola e o alho.",
+            "Adicione o refogado ao feijão e deixe apurar."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Pratos Principais"
+    },
+    {
+        "nome": "Lasanha à Bolonhesa",
+        "imagem": "https://portal.lodivino.com.br/images/receitas/lasanha-a-bolonhesa.jpg",
+        "tempo_duracao": 60,
+        "autor": "Luciana Martins",
+        "porcoes": 5,
+        "ingredientes": [
+            "500g de massa para lasanha",
+            "400g de carne moída",
+            "500ml de molho de tomate",
+            "200g de presunto",
+            "200g de queijo mussarela",
+            "1 xícara de queijo parmesão ralado",
+            "Sal e pimenta a gosto"
+        ],
+        "descricao": "Lasanha com camadas de carne moída e queijo.",
+        "modo_preparo": [
+            "Refogue a carne moída e adicione o molho de tomate.",
+            "Monte a lasanha intercalando massa, carne, presunto e queijo.",
+            "Finalize com queijo parmesão.",
+            "Asse em forno pré-aquecido a 200°C por 30 minutos."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Massas"
+    },
+    {
+        "nome": "Pão de Queijo",
+        "imagem": "https://i.panelinha.com.br/i1/228-bk-3076-blog-ayu2859.webp",
+        "tempo_duracao": 40,
+        "autor": "Juliana Santos",
+        "porcoes": 20,
+        "ingredientes": [
+            "500g de polvilho doce",
+            "300g de queijo parmesão ralado",
+            "3 ovos",
+            "1 xícara de leite",
+            "1/2 xícara de óleo",
+            "1 colher de chá de sal"
+        ],
+        "descricao": "Clássico pão de queijo mineiro, crocante por fora e macio por dentro.",
+        "modo_preparo": [
+            "Misture todos os ingredientes até formar uma massa homogênea.",
+            "Faça bolinhas e coloque em uma assadeira.",
+            "Asse em forno pré-aquecido a 180°C por 30 minutos."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Pães e Bolos"
+    },
+    {
+        "nome": "Torta de Limão",
+        "imagem": "https://recipesblob.oetker.com.br/assets/d044a4ef3cfe45998593f500c00942ef/1272x764/torta-de-limo.jpg",
+        "tempo_duracao": 60,
+        "autor": "Fernanda Costa",
+        "porcoes": 8,
+        "ingredientes": [
+            "200g de biscoito maisena",
+            "100g de manteiga",
+            "1 lata de leite condensado",
+            "1/2 xícara de suco de limão",
+            "3 claras de ovo",
+            "3 colheres de sopa de açúcar"
+        ],
+        "descricao": "Sobremesa refrescante e doce com um toque de limão.",
+        "modo_preparo": [
+            "Triture os biscoitos e misture com a manteiga para formar a base.",
+            "Asse a base por 10 minutos a 180°C.",
+            "Misture o leite condensado com o suco de limão e despeje sobre a base.",
+            "Bata as claras com o açúcar até formar um merengue e coloque sobre a torta.",
+            "Leve ao forno por mais 10 minutos para dourar."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Sobremesas"
+    },
+    {
+        "nome": "Brigadeiro",
+        "imagem": "https://www.allrecipes.com/thmb/nIUtWr1zphaH44uJfE06Pb0H4jg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/JF_24052_Brigadeiro_Shot_4x3_12852-ed2771d03b5643a9a4389d8128ed3341.jpg",
+        "tempo_duracao": 20,
+        "autor": "Rafael Mendes",
+        "porcoes": 25,
+        "ingredientes": [
+            "1 lata de leite condensado",
+            "2 colheres de sopa de chocolate em pó",
+            "1 colher de sopa de manteiga",
+            "Granulado para decorar"
+        ],
+        "descricao": "Doce brasileiro feito com leite condensado e chocolate.",
+        "modo_preparo": [
+            "Em uma panela, misture o leite condensado, o chocolate e a manteiga.",
+            "Cozinhe em fogo baixo, mexendo sempre, até desgrudar do fundo da panela.",
+            "Deixe esfriar, faça bolinhas e passe no granulado."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Sobremesas"
+    },
+    {
+        "nome": "Arroz à Grega",
+        "imagem": "https://www.receiteria.com.br/wp-content/uploads/arroz-a-grega-tradicional-rotated.jpeg",
+        "tempo_duracao": 30,
+        "autor": "Carla Lima",
+        "porcoes": 6,
+        "ingredientes": [
+            "2 xícaras de arroz",
+            "4 xícaras de água",
+            "1 cenoura ralada",
+            "1/2 xícara de ervilha",
+            "1/2 xícara de milho",
+            "Sal a gosto"
+        ],
+        "descricao": "Arroz colorido e saboroso com vegetais.",
+        "modo_preparo": [
+            "Cozinhe o arroz normalmente.",
+            "Adicione a cenoura, ervilha e milho quando o arroz estiver quase pronto.",
+            "Misture bem e deixe cozinhar até os vegetais amolecerem."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Acompanhamentos"
+    },
+    {
+        "nome": "Salada Caesar",
+        "imagem": "https://static.itdg.com.br/images/1200-675/3f0787cb6db2f0db10269fc45bd8abee/shutterstock-1078415420.jpg",
+        "tempo_duracao": 15,
+        "autor": "Daniel Rocha",
+        "porcoes": 4,
+        "ingredientes": [
+            "1 alface americana",
+            "1 xícara de croutons",
+            "50g de queijo parmesão",
+            "Molho Caesar a gosto"
+        ],
+        "descricao": "Salada leve e crocante com molho especial.",
+        "modo_preparo": [
+            "Lave e rasgue as folhas de alface.",
+            "Misture com os croutons e o queijo parmesão.",
+            "Regue com o molho Caesar e sirva."
+        ],
+        "data_enviado": "2024-11-15",
+        "categoria": "Saladas"
+    }
+]

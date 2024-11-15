@@ -1,0 +1,228 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Inter', sans-serif; /* Fonte Inter aplicada */
+    background-color: #dcfcdc; /* Novo fundo */
+}
+
+/* Navbar Customizada */
+.navbar-custom {
+    background-color: #038621; /* Nova cor do cabeçalho */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff; /* Texto branco nos links */
+    font-weight: 600; /* Peso semi-bold para os links */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #d4edda; /* Cor de hover mais clara */
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Cor da borda do toggler */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Logo na Navbar */
+.navbar-logo {
+    height: 25px; /* Reduzido para 25px em telas pequenas */
+    width: auto;
+    transition: height 0.3s ease; /* Suaviza a transição ao redimensionar */
+}
+
+@media (min-width: 577px) {
+    .navbar-logo {
+        height: 35px; /* 35px em telas médias e grandes */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 25px; /* Reduz ainda mais em dispositivos pequenos */
+    }
+}
+
+/* Ícones na Navbar */
+.navbar-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain; /* Mantém a proporção da imagem */
+    transition: transform 0.2s; /* Suaviza a transformação ao passar o mouse */
+}
+
+.navbar-icon:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Carrossel Principal */
+.large-carousel {
+    max-width: 100%; /* Ajuste conforme necessário */
+    height: 500px;    /* Altura fixa para o carrossel */
+    margin: 0 auto;
+    overflow: hidden; /* Esconde conteúdo excedente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    margin-bottom: 2rem; /* Espaço adicional abaixo do carrossel */
+}
+
+.large-carousel .carousel-item {
+    height: 500px; /* Altura consistente para os itens do carrossel */
+    cursor: pointer; /* Indica que o item é clicável */
+}
+
+.large-carousel .carousel-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    border-radius: 10px;
+    transition: opacity 0.3s ease; /* Suaviza a opacidade */
+}
+
+.large-carousel .carousel-caption h5,
+.large-carousel .carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 600; /* Usa peso semi-bold para os títulos */
+}
+
+/* Seção "Veja mais" */
+h2 {
+    font-size: 1.8rem;
+    color: #555;
+    font-weight: 600; /* Usa peso semi-bold para títulos */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s; /* Suaviza transformações e sombra */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600; /* Usa peso semi-bold para títulos */
+}
+
+/* Detalhes da Receita */
+#recipe-details .card-img-top {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#recipe-details .card-title {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#recipe-details .list-group-item {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .large-carousel {
+        height: 250px; /* Reduz a altura do carrossel em telas menores */
+    }
+
+    .large-carousel .carousel-item {
+        height: 250px;
+    }
+
+    .card img {
+        height: 100px; /* Reduz a altura das imagens dos cards em telas menores */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+
+    #recipe-details .card-title {
+        font-size: 1.5rem;
+    }
+
+    /* Já ajustamos a altura da navbar-logo via media queries */
+}
+
+/* Estilização para Links no Carrossel */
+.large-carousel a {
+    display: block;
+    height: 100%;
+    color: inherit; /* Mantém a cor do texto */
+}
+
+.large-carousel a:hover .carousel-image {
+    opacity: 0.8; /* Efeito de opacidade ao passar o mouse */
+    transition: opacity 0.3s;
+}
+
+.large-carousel a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0d6efd; /* Sombra azul ao focar */
+}
+
+/* Estilos para Animações AOS (Opcional) */
+
+/* Ajuste de margem para as animações */
+[data-aos] {
+    margin-bottom: 20px;
+}
+
+/* Ajuste de padding para listas */
+#recipe-details ul, #recipe-details ol {
+    padding-left: 20px;
+}
+
+/* Ajuste de transições suaves */
+[data-aos] {
+    transition-property: transform, opacity;
+}
+
+/* Estilos para o Formulário de Submissão */
+#submitRecipeForm input,
+#submitRecipeForm textarea,
+#submitRecipeForm select {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+#submitRecipeForm label {
+    font-weight: 500;
+}
+
+#submitRecipeForm .btn-success {
+    width: 100%;
+}
+
+/* Estilos para a Página "Todas as Receitas" */
+#all-recipes-container .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#all-recipes-container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#all-recipes-container .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
